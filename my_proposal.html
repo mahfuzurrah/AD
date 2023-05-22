@@ -1,363 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Client Dashboard</title>
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <div class="main">
-      <!-- Side Navbar -->
-      <div class="side_navbar">
-        <div class="user_profile">
-          <img src="assets/img/client_img.png" alt="" />
-          <p class="client_name">Mahfuzur Rahman</p>
-          <div class="review">
-            <i class="fa-solid fa-solid fa-star icons"></i>
-            <i class="fa-solid fa-solid fa-star icons"></i>
-            <i class="fa-solid fa-solid fa-star icons"></i>
-            <i class="fa-solid fa-solid fa-star icons"></i>
-            <i class="fa-solid fa-solid fa-star icons"></i>
-          </div>
-        </div>
-        <div class="nav">
-          <ul>
-            <li>
-              <a class="nav-link" href="index.html"
-                ><i class="fa-solid fa-house icons"></i>Dashboard</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" href="find_work.html"
-                ><i class="fa-solid fa-bag-shopping icons"></i>Find Work</a
-              >
-            </li>
-            <li>
-              <a class="nav-link active" href="my_proposal.html"
-                ><i class="fa-solid fa-clipboard-list icons"></i>My Proposal</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" href="my_profile.html"
-                ><i class="fa-solid fa-user icons"></i>My Profile</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" href="video_class.html"
-                ><i class="fa-brands fa-youtube icons"></i>Video Class</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" href="my_trainings.html"
-                ><i class="fa-solid fa-group-arrows-rotate icons"></i>My
-                Trainings</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" href="community.html"
-                ><i class="fa-solid fa-users icons"></i>Community</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-link"
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#support"
-                ><i class="fa-solid fa-headset icons"></i>Support</a
-              >
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Dashboard</title>
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="main">
+    <!-- Side Navbar -->
+    <div class="side_navbar">
+      <div class="user_profile">
+        <img src="assets/img/client_img.png" alt="" />
+        <p class="client_name">Mahfuzur Rahman</p>
+        <div class="review">
+          <i class="fa-solid fa-solid fa-star icons"></i>
+          <i class="fa-solid fa-solid fa-star icons"></i>
+          <i class="fa-solid fa-solid fa-star icons"></i>
+          <i class="fa-solid fa-solid fa-star icons"></i>
+          <i class="fa-solid fa-solid fa-star icons"></i>
         </div>
       </div>
-      <!-- Body-Content -->
-      <div class="body-content">
-        <!-- Top Navbar -->
-        <div class="top_navabr">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button
-                class="navbar-toggler"
-                id="toggleButton"
-                onclick="toggle()"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="top-nav-content">
-                <a
-                  href="#"
-                  class="notification"
-                  data-bs-toggle="modal"
-                  data-bs-target="#notification"
-                  ><i class="fa-solid fa-bell icons"></i
-                ></a>
-              </div>
-              <div id="navbarNav" style="display: none">
-                <ul class="navbar-nav nav-2">
-                  <li>
-                    <a class="nav-link active" href="index.html"
-                      ><i class="fa-solid fa-house icons"></i>Dashboard</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-link" href="find_work.html"
-                      ><i class="fa-solid fa-bag-shopping icons"></i>Find
-                      Work</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-link" href="my_proposal.html"
-                      ><i class="fa-solid fa-clipboard-list icons"></i>My
-                      Proposal</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-link" href="my_profile.html"
-                      ><i class="fa-solid fa-user icons"></i>My Profile</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-link" href="video_class.html"
-                      ><i class="fa-brands fa-youtube icons"></i>Video Class</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-link" href="my_trainings.html"
-                      ><i class="fa-solid fa-group-arrows-rotate icons"></i>My
-                      Trainings</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-link" href="community.html"
-                      ><i class="fa-solid fa-users icons"></i>Community</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="nav-link"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#support"
-                      ><i class="fa-solid fa-headset icons"></i>Support</a
-                    >
-                  </li>
-                </ul>
-              </div>
+      <div class="nav">
+        <ul>
+          <li>
+            <a class="nav-link" href="index.html"><i class="fa-solid fa-house icons"></i>Dashboard</a>
+          </li>
+          <li>
+            <a class="nav-link" href="find_work.html"><i class="fa-solid fa-bag-shopping icons"></i>Find Work</a>
+          </li>
+          <li>
+            <a class="nav-link active" href="my_proposal.html"><i class="fa-solid fa-clipboard-list icons"></i>My
+              Proposal</a>
+          </li>
+          <li>
+            <a class="nav-link" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My Profile</a>
+          </li>
+          <li>
+            <a class="nav-link" href="video_class.html"><i class="fa-brands fa-youtube icons"></i>Video Class</a>
+          </li>
+          <li>
+            <a class="nav-link" href="my_trainings.html"><i class="fa-solid fa-group-arrows-rotate icons"></i>My
+              Trainings</a>
+          </li>
+          <li>
+            <a class="nav-link" href="community.html"><i class="fa-solid fa-users icons"></i>Community</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#support"><i
+                class="fa-solid fa-headset icons"></i>Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Body-Content -->
+    <div class="body-content">
+      <!-- Top Navbar -->
+      <div class="top_navabr">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" id="toggleButton" onclick="toggle()">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="top-nav-content">
+              <a href="#" class="notification" data-bs-toggle="modal" data-bs-target="#notification"><i
+                  class="fa-solid fa-bell icons"></i></a>
             </div>
-          </nav>
-        </div>
+            <div id="navbarNav" style="display: none">
+              <ul class="navbar-nav nav-2">
+                <li>
+                  <a class="nav-link active" href="index.html"><i class="fa-solid fa-house icons"></i>Dashboard</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="find_work.html"><i class="fa-solid fa-bag-shopping icons"></i>Find
+                    Work</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="my_proposal.html"><i class="fa-solid fa-clipboard-list icons"></i>My
+                    Proposal</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My Profile</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="video_class.html"><i class="fa-brands fa-youtube icons"></i>Video Class</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="my_trainings.html"><i class="fa-solid fa-group-arrows-rotate icons"></i>My
+                    Trainings</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="community.html"><i class="fa-solid fa-users icons"></i>Community</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#support"><i
+                      class="fa-solid fa-headset icons"></i>Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
 
-        <!-- body -->
-        <div class="container-fluid body-container">
-          <section class="proposal_list">
-            <div class="proposal_dropdown">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+      <!-- body -->
+      <div class="container-fluid body-container">
+        <section class="proposal_list">
+          <div class="proposal_dropdown">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mt-4">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Project Name Here</th>
+                  <th scope="col">Proposal Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="proposal_status.html">Project Name Here</a></td>
+                  <td><a href="proposal_status.html">Proposal Sent</a></td>
+                </tr>
+
+                <tr>
+                  <td><a href="proposal_status.html">Project Name Here</a></td>
+                  <td><a href="proposal_status.html">Proposal Sent</a></td>
+                </tr>
+                <tr>
+                  <td><a href="proposal_status.html">Project Name Here</a></td>
+                  <td><a href="proposal_status.html">Proposal Sent</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <!-- Notification Popup -->
+  <div class="modal fade" id="notification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">
+            Latest Notification
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark popup-icons"></i>
+          </button>
+        </div>
+        <div class="modal-body notifi">
+          <div class="notification">
+            <div class="item active">
+              <div class="sourch">
+                <img src="assets/img/notification_mail.png" alt="" />
+                <div class="text">
+                  <p>Notification Name</p>
+                  <span>Notification details</span>
+                </div>
+              </div>
+              <div class="date">
+                <p>1 day ago</p>
+              </div>
             </div>
-            <div class="mt-4">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">Project Name Here</th>
-                    <th scope="col">Proposal Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Project Name Here</td>
-                    <td>Proposal Sent</td>
-                  </tr>
-                  <tr>
-                    <td>Project Name Here</td>
-                    <td>Contact released</td>
-                  </tr>
-                  <tr>
-                    <td>Project Name Here</td>
-                    <td>Proposal denied</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="item active">
+              <div class="sourch">
+                <img src="assets/img/notification_mail.png" alt="" />
+                <div class="text">
+                  <p>Notification Name</p>
+                  <span>Notification details</span>
+                </div>
+              </div>
+              <div class="date">
+                <p>1 day ago</p>
+              </div>
             </div>
-          </section>
+            <div class="item">
+              <div class="sourch">
+                <img src="assets/img/notification_mail.png" alt="" />
+                <div class="text">
+                  <p>Notification Name</p>
+                  <span>Notification details</span>
+                </div>
+              </div>
+              <div class="date">
+                <p>1 day ago</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sourch">
+                <img src="assets/img/notification_mail.png" alt="" />
+                <div class="text">
+                  <p>Notification Name</p>
+                  <span>Notification details</span>
+                </div>
+              </div>
+              <div class="date">
+                <p>1 day ago</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Popup -->
-    <!-- Notification Popup -->
-    <div
-      class="modal fade"
-      id="notification"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="exampleModalLabel">
-              Latest Notification
-            </h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <i class="fa-solid fa-xmark popup-icons"></i>
-            </button>
-          </div>
-          <div class="modal-body notifi">
-            <div class="notification">
-              <div class="item active">
-                <div class="sourch">
-                  <img src="assets/img/notification_mail.png" alt="" />
-                  <div class="text">
-                    <p>Notification Name</p>
-                    <span>Notification details</span>
-                  </div>
-                </div>
-                <div class="date">
-                  <p>1 day ago</p>
-                </div>
-              </div>
-              <div class="item active">
-                <div class="sourch">
-                  <img src="assets/img/notification_mail.png" alt="" />
-                  <div class="text">
-                    <p>Notification Name</p>
-                    <span>Notification details</span>
-                  </div>
-                </div>
-                <div class="date">
-                  <p>1 day ago</p>
-                </div>
+  <!-- Support Popup -->
+  <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">
+            Get Into Touch <br /><span>
+              You can expect top-quality work within your budget</span>
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark popup-icons"></i>
+          </button>
+        </div>
+        <div class="modal-body proceed">
+          <div class="user-info" id="personal">
+            <div class="items">
+              <div class="item">
+                <div class="search__name" id="name">Name</div>
+                <input type="name" class="search__input" placeholder="your name" />
               </div>
               <div class="item">
-                <div class="sourch">
-                  <img src="assets/img/notification_mail.png" alt="" />
-                  <div class="text">
-                    <p>Notification Name</p>
-                    <span>Notification details</span>
-                  </div>
-                </div>
-                <div class="date">
-                  <p>1 day ago</p>
-                </div>
+                <div class="search__name" id="gender">Email</div>
+                <input type="mail" class="search__input" placeholder="yourmail@gmail.com" />
               </div>
+            </div>
+            <div class="items">
               <div class="item">
-                <div class="sourch">
-                  <img src="assets/img/notification_mail.png" alt="" />
-                  <div class="text">
-                    <p>Notification Name</p>
-                    <span>Notification details</span>
-                  </div>
-                </div>
-                <div class="date">
-                  <p>1 day ago</p>
-                </div>
+                <div class="search__name" id="Message">Subject</div>
+                <input type="text" class="search__input" placeholder="subject" />
               </div>
             </div>
+            <div class="items">
+              <div class="item">
+                <div class="search__name" id="Message">Message</div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <a href="index.html" class="btn btn__secondary" onclick="submit()">
+              Submit
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Support Popup -->
-    <div
-      class="modal fade"
-      id="support"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="exampleModalLabel">
-              Get Into Touch <br /><span>
-                You can expect top-quality work within your budget</span
-              >
-            </h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            >
-              <i class="fa-solid fa-xmark popup-icons"></i>
-            </button>
-          </div>
-          <div class="modal-body proceed">
-            <div class="user-info" id="personal">
-              <div class="items">
-                <div class="item">
-                  <div class="search__name" id="name">Name</div>
-                  <input
-                    type="name"
-                    class="search__input"
-                    placeholder="your name"
-                  />
-                </div>
-                <div class="item">
-                  <div class="search__name" id="gender">Email</div>
-                  <input
-                    type="mail"
-                    class="search__input"
-                    placeholder="yourmail@gmail.com"
-                  />
-                </div>
-              </div>
-              <div class="items">
-                <div class="item">
-                  <div class="search__name" id="Message">Subject</div>
-                  <input
-                    type="text"
-                    class="search__input"
-                    placeholder="subject"
-                  />
-                </div>
-              </div>
-              <div class="items">
-                <div class="item">
-                  <div class="search__name" id="Message">Message</div>
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                </div>
-              </div>
-              <a
-                href="index.html"
-                class="btn btn__secondary"
-                onclick="submit()"
-              >
-                Submit
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- JavaScript -->
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/style.js"></script>
+</body>
 
-    <!-- JavaScript -->
-    <script src="assets/js/jquery-3.6.4.min.js"></script>
-    <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/fontawesome.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/style.js"></script>
-  </body>
 </html>

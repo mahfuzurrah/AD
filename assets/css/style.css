@@ -645,7 +645,7 @@ svg.svg-inline--fa.fa-magnifying-glass.icons {
   width: 100%;
   height: 75vh;
   overflow-y: auto;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 
 /*=========================================== 
@@ -744,6 +744,7 @@ My Profile
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .freelancer_info {
@@ -752,12 +753,14 @@ My Profile
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .freelancer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .freelancer_img {
@@ -767,7 +770,7 @@ My Profile
 }
 
 .talent_profile .talent-info img {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .talent_profile .keywords-group {
@@ -939,7 +942,7 @@ My Profile
 
 /* popup */
 
-.modal-body{
+.modal-body {
   padding: 20px 30px;
 }
 
@@ -957,7 +960,7 @@ My Profile
   flex-wrap: 20px
 }
 
-.user-info.assistant .items .item{
+.user-info.assistant .items .item {
   max-width: 360px;
 }
 
@@ -971,9 +974,10 @@ My Profile
   margin-right: 15px;
 }
 
-.checkbox_item p{
+.checkbox_item p {
   font-size: var(--normal-font-size);
 }
+
 /*=========================================== 
 Project Page
 ===========================================*/
@@ -1141,6 +1145,8 @@ Popup
   justify-content: center;
   margin-top: 50px;
   font-weight: 600;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
 .time_container #countdown div {
@@ -1175,7 +1181,7 @@ Popup
   max-width: 360px;
   width: 100%;
   margin-top: 20px;
-  column-gap: 20px;
+  gap: 20px
 }
 
 .input-box input,
@@ -1385,6 +1391,47 @@ Popup
   background: var(--border-color);
 }
 
+
+/* proposal_status */
+
+.p-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+
+.released {
+  background: #BED24A;
+}
+
+.sent {
+  background: #9EDCD0;
+}
+
+.moderation {
+  background: #ABD7F9;
+}
+
+.denied {
+  background: #F099C1;
+}
+
+td a:hover {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+
 /* Responcive Part */
 
 @media screen and (max-width: 1350px) {
@@ -1479,6 +1526,31 @@ Popup
   }
 
   .tag a.btn {
+    width: 100%;
+  }
+
+  .search-box {
+    margin-top: 20px;
+  }
+
+  .job_box {
+    padding-bottom: 100px;
+  }
+
+  .talent-info .btn {
+    width: 100%;
+  }
+
+  .time_container{
+    width: 100%;
+  }
+
+  .input-box{
+    display: block;
+  }
+
+  .input-box button{
+    margin-top: 20px;
     width: 100%;
   }
 }

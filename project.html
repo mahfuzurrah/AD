@@ -39,7 +39,7 @@
             <a class="nav-link" href="my_proposal.html"><i class="fa-solid fa-clipboard-list icons"></i>My Proposal</a>
           </li>
           <li>
-            <a class="nav-link active" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My Profile</a>
+            <a class="nav-link" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My Profile</a>
           </li>
           <li>
             <a class="nav-link" href="video_class.html"><i class="fa-brands fa-youtube icons"></i>Video Class</a>
@@ -281,6 +281,65 @@
             <a href="index.html" class="btn btn__secondary" onclick="submit()">
               Submit
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Create Project Popup -->
+  <div class="modal fade" id="project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">
+            Send an Proposal <br /><span>
+              You can expect top-quality work within your budget</span>
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark popup-icons"></i>
+          </button>
+        </div>
+        <div class="modal-body proceed">
+          <div class="user-info" id="personal">
+            <div class="items">
+              <div class="item">
+                <div class="search__name" id="weight">
+                  Write here your proposal
+                </div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="items mt-4">
+              <div class="checkbox_item">
+                <input type="checkbox" class="checkbox" />
+                <p>Acceptance policy checkbox</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn__secondary" data-bs-toggle="modal" data-bs-target="#thank_you">Sent a Proposal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create Project Popup -->
+  <div class="modal fade" id="thank_you" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark popup-icons"></i>
+          </button>
+        </div>
+        <div class="modal-body proceed">
+          <div class="user-info" id="personal">
+            <h2 style="text-align: center; padding: 20px; background: #F3F7F3;">Thank You <br> Your proposal is in moderation</h2>
           </div>
         </div>
       </div>

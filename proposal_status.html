@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <!-- Side Navbar -->
+        <div class="side_navbar">
+            <div class="user_profile">
+                <img src="assets/img/client_img.png" alt="" />
+                <p class="client_name">Mahfuzur Rahman</p>
+                <div class="review">
+                    <i class="fa-solid fa-solid fa-star icons"></i>
+                    <i class="fa-solid fa-solid fa-star icons"></i>
+                    <i class="fa-solid fa-solid fa-star icons"></i>
+                    <i class="fa-solid fa-solid fa-star icons"></i>
+                    <i class="fa-solid fa-solid fa-star icons"></i>
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house icons"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="find_work.html"><i class="fa-solid fa-bag-shopping icons"></i>Find
+                            Work</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="my_proposal.html"><i class="fa-solid fa-clipboard-list icons"></i>My
+                            Proposal</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My
+                            Profile</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="video_class.html"><i class="fa-brands fa-youtube icons"></i>Video
+                            Class</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="my_trainings.html"><i
+                                class="fa-solid fa-group-arrows-rotate icons"></i>My
+                            Trainings</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="community.html"><i class="fa-solid fa-users icons"></i>Community</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#support"><i
+                                class="fa-solid fa-headset icons"></i>Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Body-Content -->
+        <div class="body-content">
+            <!-- Top Navbar -->
+            <div class="top_navabr">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" id="toggleButton" onclick="toggle()">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="top-nav-content">
+                            <a href="#" class="notification" data-bs-toggle="modal" data-bs-target="#notification"><i
+                                    class="fa-solid fa-bell icons"></i></a>
+                        </div>
+                        <div id="navbarNav" style="display: none">
+                            <ul class="navbar-nav nav-2">
+                                <li>
+                                    <a class="nav-link active" href="index.html"><i
+                                            class="fa-solid fa-house icons"></i>Dashboard</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="find_work.html"><i
+                                            class="fa-solid fa-bag-shopping icons"></i>Find
+                                        Work</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="my_proposal.html"><i
+                                            class="fa-solid fa-clipboard-list icons"></i>My
+                                        Proposal</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My
+                                        Profile</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="video_class.html"><i
+                                            class="fa-brands fa-youtube icons"></i>Video Class</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="my_trainings.html"><i
+                                            class="fa-solid fa-group-arrows-rotate icons"></i>My
+                                        Trainings</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="community.html"><i
+                                            class="fa-solid fa-users icons"></i>Community</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#support"><i
+                                            class="fa-solid fa-headset icons"></i>Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- body -->
+            <div class="container-fluid body-container">
+                <section>
+                    <div class="row project_area">
+                        <div class="col-lg-8">
+                            <div class="project_info">
+                                <div class="project_heading">
+                                    <h2>Project Title</h2>
+                                    <p class="date">Published in April 04, 2023</p>
+                                </div>
+                                <div class="project_heading">
+                                    <h2>Project description</h2>
+                                    <div class="text__content2">
+                                        <p>
+                                            List of professionals each card should contain : Photo,
+                                            name, Badges( you can se on our website on the last
+                                            feedback sections), stars of reviews,&nbsp; Description,
+                                            Tags below the description with skills, List of
+                                            professionals each card should contain : Photo, name,
+                                            Badges( you can se on our website on the last feedback
+                                            sections), stars of reviews,&nbsp; Description, Tags
+                                            below the description with skills,
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <a href="#" id="toggleButton2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="status box">
+                                <h2>Status: <span class="btn">Active</span></h2>
+                            </div>
+                            <div class="sm_sclient_img box">
+                                <img src="assets/img/client_img.png" alt="" />
+                                <p>Mahfuzur Rahman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <h2>Your proposal for this project</h2>
+                        <div class="col-lg-12 mt-5">
+                            <div class="talent_profile">
+                                <div class="talent-info">
+                                    <div class="freelancer_info">
+                                        <div class="freelancer">
+                                            <a href="talent_profile_page.html"><img class="freelancer_img"
+                                                    src="assets/img/client_img.png" alt="" /></a>
+                                            <div class="info">
+                                                <div>
+                                                    <a href="talent_profile_page.html">
+                                                        <h2>
+                                                            Mahfuzur Rahman
+                                                            <img src="assets/img/Icons.svg" alt="" />
+                                                        </h2>
+                                                    </a>
+                                                    <p>UI/UX Designer & Front-end Developer</p>
+                                                </div>
+                                                <div class="down-icons-list">
+                                                    <div class="ex_icon">
+                                                        <span><i class="fa-solid fa-book icons"></i></span>
+                                                        <span><i class="fa-solid fa-star icons"></i></span>
+                                                        <span><i class="fa-solid fa-trophy icons"></i></span>
+                                                    </div>
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star icons"></i>
+                                                        <i class="fa-solid fa-star icons"></i>
+                                                        <i class="fa-solid fa-star icons"></i>
+                                                        <i class="fa-solid fa-star icons"></i>
+                                                        <i class="fa-solid fa-star icons"></i>
+                                                        <p>(5.0)</p>
+                                                    </div>
+                                                    <div class="country">
+                                                        <p>
+                                                            <img src="assets/img/country/BD_Flag.png" alt="" />
+                                                            Bangladesh
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span> <b>Status:</b> <a href="#" class="btn m-2 released"
+                                                data-bs-toggle="modal" data-bs-target="#client_info">Contact
+                                                Released</a></span>
+                                    </div>
+                                </div>
+                                <div class="keywords-group">
+                                    <div class="ky_btn">keywords</div>
+                                    <div class="ky_btn">keywords</div>
+                                    <div class="ky_btn">keywords</div>
+                                    <div class="ky_btn">keywords</div>
+                                    <div class="ky_btn">keywords</div>
+                                </div>
+                                <div class="description_part mt-5">
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ipsa
+                                        deserunt molestiae accusantium? Ad voluptates cumque officia. Magni obcaecati
+                                        quae sit suscipit autem ducimus quasi nihil corporis facilis unde at amet modi,
+                                        nisi nemo illum accusantium sequi beatae culpa? Deleniti ratione vitae dolor
+                                        repudiandae architecto velit incidunt, atque saepe quae ea adipisci fugit
+                                        doloremque, pariatur similique minima tempore culpa cum placeat aliquid ut
+                                        consequatur natus deserunt fugiat libero. Nisi iste reprehenderit ipsam fugiat
+                                        perspiciatis dolorum laboriosam? Quae eveniet voluptate sed veniam vero
+                                        exercitationem quam fuga. Omnis asperiores vel laborum rerum dicta voluptatem ab
+                                        id quisquam recusandae ut. Asperiores temporibus quia fugit doloribus nemo qui
+                                        optio aspernatur accusamus sint dolorem quidem
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <!-- Notification Popup -->
+    <div class="modal fade" id="notification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">
+                        Latest Notification
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark popup-icons"></i>
+                    </button>
+                </div>
+                <div class="modal-body notifi">
+                    <div class="notification">
+                        <div class="item active">
+                            <div class="sourch">
+                                <img src="assets/img/notification_mail.png" alt="" />
+                                <div class="text">
+                                    <p>Notification Name</p>
+                                    <span>Notification details</span>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                        <div class="item active">
+                            <div class="sourch">
+                                <img src="assets/img/notification_mail.png" alt="" />
+                                <div class="text">
+                                    <p>Notification Name</p>
+                                    <span>Notification details</span>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="sourch">
+                                <img src="assets/img/notification_mail.png" alt="" />
+                                <div class="text">
+                                    <p>Notification Name</p>
+                                    <span>Notification details</span>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="sourch">
+                                <img src="assets/img/notification_mail.png" alt="" />
+                                <div class="text">
+                                    <p>Notification Name</p>
+                                    <span>Notification details</span>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <p>1 day ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Support Popup -->
+    <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">
+                        Get Into Touch <br /><span>
+                            You can expect top-quality work within your budget</span>
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark popup-icons"></i>
+                    </button>
+                </div>
+                <div class="modal-body proceed">
+                    <div class="user-info" id="personal">
+                        <div class="items">
+                            <div class="item">
+                                <div class="search__name" id="name">Name</div>
+                                <input type="name" class="search__input" placeholder="your name" />
+                            </div>
+                            <div class="item">
+                                <div class="search__name" id="gender">Email</div>
+                                <input type="mail" class="search__input" placeholder="yourmail@gmail.com" />
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="item">
+                                <div class="search__name" id="Message">Subject</div>
+                                <input type="text" class="search__input" placeholder="subject" />
+                            </div>
+                        </div>
+                        <div class="items">
+                            <div class="item">
+                                <div class="search__name" id="Message">Message</div>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <a href="index.html" class="btn btn__secondary" onclick="submit()">
+                            Submit
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Client Info -->
+    <div class="modal fade" id="client_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel"></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark popup-icons"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="talent_profile client_profile" style="padding: 0; border: none">
+                        <div class="talent-info">
+                            <div class="freelancer_info">
+                                <div class="freelancer">
+                                    <a href="talent_profile_page.html"><img class="freelancer_img"
+                                            src="assets/img/client_img.png" alt="" /></a>
+                                    <div class="info">
+                                        <div>
+                                            <a href="talent_profile_page.html">
+                                                <h2>
+                                                    Mahfuzur Rahman
+                                                    <img src="assets/img/Icons.svg" alt="" />
+                                                </h2>
+                                            </a>
+                                            <p>CEO</p>
+                                        </div>
+                                        <div class="down-icons-list">
+                                            <div class="star">
+                                                <i class="fa-solid fa-star icons"></i>
+                                                <i class="fa-solid fa-star icons"></i>
+                                                <i class="fa-solid fa-star icons"></i>
+                                                <i class="fa-solid fa-star icons"></i>
+                                                <i class="fa-solid fa-star icons"></i>
+                                                <p>(5.0)</p>
+                                            </div>
+                                            <div class="country">
+                                                <p>
+                                                    <img src="assets/img/country/BD_Flag.png" alt="" />
+                                                    Bangladesh
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn"><img src="assets/img/logos_whatsapp-icon.svg" alt=""> Open
+                                    WhatsApp Chat</a>
+                            </div>
+                        </div>
+                        <div class="p-info">
+                            <div class="act-project">
+                                <p>Number of projects published: <span>5</span></p>
+                            </div>
+                            <div>
+                                <p>Phone Number: <span>0123456789</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-3" style="padding: 20px; background: #F1F5FB;">
+                            <h2>Message: open Virtap</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/style.js"></script>
+</body>
+
+</html>
