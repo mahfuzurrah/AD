@@ -2,412 +2,492 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Client Dashboard</title>
-    <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Dashboard</title>
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-    <div class="main">
-        <!-- Side Navbar -->
-        <div class="side_navbar">
-            <div class="user_profile">
-                <img src="assets/img/client_img.png" alt="" />
-                <p class="client_name">Mahfuzur Rahman</p>
-                <div class="review">
-                    <i class="fa-solid fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-solid fa-star icons"></i>
-                    <i class="fa-solid fa-solid fa-star icons"></i>
-                </div>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li>
-                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house icons"></i>Dashboard</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="find_work.html"><i
-                                class="fa-solid fa-bag-shopping icons"></i>Find
-                            Work</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="my_proposal.html"><i class="fa-solid fa-clipboard-list icons"></i>My
-                            Proposal</a>
-                    </li>
-                    <li>
-                        <a class="nav-link active" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My Profile</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="video_class.html"><i class="fa-brands fa-youtube icons"></i>Video
-                            Class</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="my_trainings.html"><i
-                                class="fa-solid fa-group-arrows-rotate icons"></i>My
-                            Trainings</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="community.html"><i class="fa-solid fa-users icons"></i>Community</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#support"><i
-                                class="fa-solid fa-headset icons"></i>Support</a>
-                    </li>
-                </ul>
-            </div>
+  <div class="main">
+    <!-- Side Navbar -->
+    <div class="side_navbar">
+      <div class="user_profile">
+        <img src="assets/img/client_img.png" alt="" />
+        <p class="client_name">Mahfuzur Rahman</p>
+        <div class="review">
+          <i class="fa-solid fa-solid fa-star icons"></i>
+          <i class="fa-solid fa-solid fa-star icons"></i>
+          <i class="fa-solid fa-solid fa-star icons"></i>
+          <i class="fa-solid fa-solid fa-star icons"></i>
+          <i class="fa-solid fa-solid fa-star icons"></i>
         </div>
-        <!-- Body-Content -->
-        <div class="body-content">
-            <!-- Top Navbar -->
-            <div class="top_navabr">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" id="toggleButton" onclick="toggle()">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="top-nav-content">
-                            <a href="#" class="notification" data-bs-toggle="modal" data-bs-target="#notification"><i
-                                    class="fa-solid fa-bell icons"></i></a>
-                        </div>
-                        <div id="navbarNav" style="display: none">
-                            <ul class="navbar-nav nav-2">
-                                <li>
-                                    <a class="nav-link active" href="index.html"><i
-                                            class="fa-solid fa-house icons"></i>Dashboard</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="find_work.html"><i
-                                            class="fa-solid fa-bag-shopping icons"></i>Find
-                                        Work</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="my_proposal.html"><i
-                                            class="fa-solid fa-clipboard-list icons"></i>My
-                                        Proposal</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My
-                                        Profile</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="video_class.html"><i
-                                            class="fa-brands fa-youtube icons"></i>Video Class</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="my_trainings.html"><i
-                                            class="fa-solid fa-group-arrows-rotate icons"></i>My
-                                        Trainings</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="community.html"><i
-                                            class="fa-solid fa-users icons"></i>Community</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#support"><i
-                                            class="fa-solid fa-headset icons"></i>Support</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-
-            <!-- body -->
-            <div class="container-fluid body-container">
-                <section class="element">
-                    <div class="talent-page freelancer_profile">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="talent_profile">
-                                    <div class="talent-info">
-                                        <div class="freelancer_info">
-                                            <div class="freelancer">
-                                                <a href="talent_profile_page.html"><img class="freelancer_img"
-                                                        src="assets/img/client_img.png" alt="" /></a>
-                                                <div class="info">
-                                                    <div>
-                                                        <a href="talent_profile_page.html">
-                                                            <h2>
-                                                                Mahfuzur Rahman
-                                                                <img src="assets/img/Icons.svg" alt="" />
-                                                            </h2>
-                                                        </a>
-                                                        <p>UI/UX Designer & Front-end Developer</p>
-                                                    </div>
-                                                    <div class="down-icons-list">
-                                                        <div class="ex_icon">
-                                                            <span><i class="fa-solid fa-book icons"></i></span>
-                                                            <span><i class="fa-solid fa-star icons"></i></span>
-                                                            <span><i class="fa-solid fa-trophy icons"></i></span>
-                                                        </div>
-                                                        <div class="star">
-                                                            <i class="fa-solid fa-star icons"></i>
-                                                            <i class="fa-solid fa-star icons"></i>
-                                                            <i class="fa-solid fa-star icons"></i>
-                                                            <i class="fa-solid fa-star icons"></i>
-                                                            <i class="fa-solid fa-star icons"></i>
-                                                            <p>(5.0)</p>
-                                                        </div>
-                                                        <div class="country">
-                                                            <p>
-                                                                <img src="assets/img/country/BD_Flag.png" alt="" />
-                                                                Bangladesh
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="btn">Edit Profile</a>
-                                        </div>
-                                    </div>
-                                    <div class="keywords-group">
-                                        <div class="ky_btn">keywords</div>
-                                        <div class="ky_btn">keywords</div>
-                                        <div class="ky_btn">keywords</div>
-                                        <div class="ky_btn">keywords</div>
-                                        <div class="ky_btn">keywords</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="about_us">
-                                <div class="section-title">
-                                    <h2>About Us</h2>
-                                    <div class="btn">Expert certified</div>
-                                </div>
-                                <p>
-                                    List of professionals each card should contain : Photo,
-                                    name, Badges( you can se on our website on the last feedback
-                                    sections), stars of reviews,  Description, Tags below the
-                                    description with skills, List of professionals each card
-                                    should contain : Photo, name, Badges( you can se on our
-                                    website on the last feedback sections), stars of reviews, 
-                                    Description, Tags below the description with skills,
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row seller_review">
-                        <div class="col-lg-12">
-                            <div class="post_project user mt-5">
-                                <div class="nav">
-                                    <h1>Reviews as Assistant</h1>
-                                    <h1 class="ratting_number">
-                                        <i class="fa-solid fa-star icons"></i>(550)
-                                    </h1>
-                                </div>
-                                <div class="proposals-list">
-                                    <div class="proposal">
-                                        <div class="user">
-                                            <div class="freelancer-img">
-                                                <img src="assets/img/client_img.png" alt="" />
-                                            </div>
-                                            <div class="proposal-info">
-                                                <p class="name">Name Here</p>
-                                                <div class="ratting mt-1">
-                                                    <p class="star">
-                                                        <i class="fa-solid fa-star icons"></i> (5.0)
-                                                    </p>
-                                                    <p>
-                                                        <img src="assets/img/country/BD_Flag.png" alt="" />
-                                                        Bangladesh
-                                                    </p>
-                                                </div>
-                                                <p class="mt-2">Highly skilled and talented.</p>
-                                            </div>
-                                        </div>
-                                        <div class="day">
-                                            <p>Published 1 week ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="proposal">
-                                        <div class="user">
-                                            <div class="freelancer-img">
-                                                <img src="assets/img/client_img.png" alt="" />
-                                            </div>
-                                            <div class="proposal-info">
-                                                <p class="name">Name Here</p>
-                                                <div class="ratting mt-1">
-                                                    <p class="star">
-                                                        <i class="fa-solid fa-star icons"></i> (5.0)
-                                                    </p>
-                                                    <p>
-                                                        <img src="assets/img/country/BD_Flag.png" alt="" />
-                                                        Bangladesh
-                                                    </p>
-                                                </div>
-                                                <p class="mt-2">Highly skilled and talented.</p>
-                                            </div>
-                                        </div>
-                                        <div class="day">
-                                            <p>Published 1 week ago</p>
-                                        </div>
-                                    </div>
-                                    <div class="proposal">
-                                        <div class="user">
-                                            <div class="freelancer-img">
-                                                <img src="assets/img/client_img.png" alt="" />
-                                            </div>
-                                            <div class="proposal-info">
-                                                <p class="name">Name Here</p>
-                                                <div class="ratting mt-1">
-                                                    <p class="star">
-                                                        <i class="fa-solid fa-star icons"></i> (5.0)
-                                                    </p>
-                                                    <p>
-                                                        <img src="assets/img/country/BD_Flag.png" alt="" />
-                                                        Bangladesh
-                                                    </p>
-                                                </div>
-                                                <p class="mt-2">Highly skilled and talented.</p>
-                                            </div>
-                                        </div>
-                                        <div class="day">
-                                            <p>Published 1 week ago</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
+      </div>
+      <div class="nav">
+        <ul>
+          <li>
+            <a class="nav-link" href="index.html"><i class="fa-solid fa-house icons"></i>Dashboard</a>
+          </li>
+          <li>
+            <a class="nav-link" href="find_work.html"><i class="fa-solid fa-bag-shopping icons"></i>Find Work</a>
+          </li>
+          <li>
+            <a class="nav-link" href="my_proposal.html"><i class="fa-solid fa-clipboard-list icons"></i>My Proposal</a>
+          </li>
+          <li>
+            <a class="nav-link active" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My Profile</a>
+          </li>
+          <li>
+            <a class="nav-link" href="video_class.html"><i class="fa-brands fa-youtube icons"></i>Video Class</a>
+          </li>
+          <li>
+            <a class="nav-link" href="my_trainings.html"><i class="fa-solid fa-group-arrows-rotate icons"></i>My
+              Trainings</a>
+          </li>
+          <li>
+            <a class="nav-link" href="community.html"><i class="fa-solid fa-users icons"></i>Community</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#support"><i
+                class="fa-solid fa-headset icons"></i>Support</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <!-- Popup -->
-    <!-- Notification Popup -->
-    <div class="modal fade" id="notification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="exampleModalLabel">
-                        Latest Notification
-                    </h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fa-solid fa-xmark popup-icons"></i>
-                    </button>
-                </div>
-                <div class="modal-body notifi">
-                    <div class="notification">
-                        <div class="item active">
-                            <div class="sourch">
-                                <img src="assets/img/notification_mail.png" alt="" />
-                                <div class="text">
-                                    <p>Notification Name</p>
-                                    <span>Notification details</span>
-                                </div>
-                            </div>
-                            <div class="date">
-                                <p>1 day ago</p>
-                            </div>
-                        </div>
-                        <div class="item active">
-                            <div class="sourch">
-                                <img src="assets/img/notification_mail.png" alt="" />
-                                <div class="text">
-                                    <p>Notification Name</p>
-                                    <span>Notification details</span>
-                                </div>
-                            </div>
-                            <div class="date">
-                                <p>1 day ago</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="sourch">
-                                <img src="assets/img/notification_mail.png" alt="" />
-                                <div class="text">
-                                    <p>Notification Name</p>
-                                    <span>Notification details</span>
-                                </div>
-                            </div>
-                            <div class="date">
-                                <p>1 day ago</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="sourch">
-                                <img src="assets/img/notification_mail.png" alt="" />
-                                <div class="text">
-                                    <p>Notification Name</p>
-                                    <span>Notification details</span>
-                                </div>
-                            </div>
-                            <div class="date">
-                                <p>1 day ago</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Body-Content -->
+    <div class="body-content">
+      <!-- Top Navbar -->
+      <div class="top_navabr">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" id="toggleButton" onclick="toggle()">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="top-nav-content">
+              <a href="#" class="notification" data-bs-toggle="modal" data-bs-target="#notification"><i
+                  class="fa-solid fa-bell icons"></i></a>
             </div>
-        </div>
-    </div>
-
-    <!-- Support Popup -->
-    <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="exampleModalLabel">
-                        Get Into Touch <br /><span>
-                            You can expect top-quality work within your budget</span>
-                    </h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fa-solid fa-xmark popup-icons"></i>
-                    </button>
-                </div>
-                <div class="modal-body proceed">
-                    <div class="user-info" id="personal">
-                        <div class="items">
-                            <div class="item">
-                                <div class="search__name" id="name">Name</div>
-                                <input type="name" class="search__input" placeholder="your name" />
-                            </div>
-                            <div class="item">
-                                <div class="search__name" id="gender">Email</div>
-                                <input type="mail" class="search__input" placeholder="yourmail@gmail.com" />
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item">
-                                <div class="search__name" id="weight">Subject</div>
-                                <input type="text" class="search__input" placeholder="subject" />
-                            </div>
-                        </div>
-                        <div class="items">
-                            <div class="item">
-                                <div class="search__name" id="weight">Weight</div>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <a href="index.html" class="btn btn__secondary" onclick="submit()">
-                            Submit
-                        </a>
-                    </div>
-                </div>
+            <div id="navbarNav" style="display: none">
+              <ul class="navbar-nav nav-2">
+                <li>
+                  <a class="nav-link active" href="index.html"><i class="fa-solid fa-house icons"></i>Dashboard</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="find_work.html"><i class="fa-solid fa-bag-shopping icons"></i>Find
+                    Work</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="my_proposal.html"><i class="fa-solid fa-clipboard-list icons"></i>My
+                    Proposal</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="my_profile.html"><i class="fa-solid fa-user icons"></i>My Profile</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="video_class.html"><i class="fa-brands fa-youtube icons"></i>Video Class</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="my_trainings.html"><i class="fa-solid fa-group-arrows-rotate icons"></i>My
+                    Trainings</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="community.html"><i class="fa-solid fa-users icons"></i>Community</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#support"><i
+                      class="fa-solid fa-headset icons"></i>Support</a>
+                </li>
+              </ul>
             </div>
-        </div>
-    </div>
+          </div>
+        </nav>
+      </div>
 
-    <!-- JavaScript -->
-    <script src="assets/js/jquery-3.6.4.min.js"></script>
-    <script src="assets/js/all.min.js"></script>
-    <script src="assets/js/fontawesome.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/style.js"></script>
+      <!-- body -->
+      <div class="container-fluid body-container">
+        <section class="element">
+          <div class="talent-page freelancer_profile">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="talent_profile">
+                  <div class="talent-info">
+                    <div class="freelancer_info">
+                      <div class="freelancer">
+                        <a href="talent_profile_page.html"><img class="freelancer_img" src="assets/img/client_img.png"
+                            alt="" /></a>
+                        <div class="info">
+                          <div>
+                            <a href="talent_profile_page.html">
+                              <h2>
+                                Mahfuzur Rahman
+                                <img src="assets/img/Icons.svg" alt="" />
+                              </h2>
+                            </a>
+                            <p>UI/UX Designer & Front-end Developer</p>
+                          </div>
+                          <div class="down-icons-list">
+                            <div class="ex_icon">
+                              <span><i class="fa-solid fa-book icons"></i></span>
+                              <span><i class="fa-solid fa-star icons"></i></span>
+                              <span><i class="fa-solid fa-trophy icons"></i></span>
+                            </div>
+                            <div class="star">
+                              <i class="fa-solid fa-star icons"></i>
+                              <i class="fa-solid fa-star icons"></i>
+                              <i class="fa-solid fa-star icons"></i>
+                              <i class="fa-solid fa-star icons"></i>
+                              <i class="fa-solid fa-star icons"></i>
+                              <p>(5.0)</p>
+                            </div>
+                            <div class="country">
+                              <p>
+                                <img src="assets/img/country/BD_Flag.png" alt="" />
+                                Bangladesh
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#edit__profile">Edit Profile</a>
+                    </div>
+                  </div>
+                  <div class="keywords-group">
+                    <div class="ky_btn">keywords</div>
+                    <div class="ky_btn">keywords</div>
+                    <div class="ky_btn">keywords</div>
+                    <div class="ky_btn">keywords</div>
+                    <div class="ky_btn">keywords</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="about_us">
+                <div class="section-title">
+                  <h2>About Us</h2>
+                  <div class="btn">Expert certified</div>
+                </div>
+                <p>
+                  List of professionals each card should contain : Photo,
+                  name, Badges( you can se on our website on the last feedback
+                  sections), stars of reviews,  Description, Tags below the
+                  description with skills, List of professionals each card
+                  should contain : Photo, name, Badges( you can se on our
+                  website on the last feedback sections), stars of reviews, 
+                  Description, Tags below the description with skills,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row seller_review">
+            <div class="col-lg-12">
+              <div class="post_project user mt-5">
+                <div class="nav">
+                  <h1>Reviews as Assistant</h1>
+                  <h1 class="ratting_number">
+                    <i class="fa-solid fa-star icons"></i>(550)
+                  </h1>
+                </div>
+                <div class="proposals-list">
+                  <div class="proposal">
+                    <div class="user">
+                      <div class="freelancer-img">
+                        <img src="assets/img/client_img.png" alt="" />
+                      </div>
+                      <div class="proposal-info">
+                        <p class="name">Name Here</p>
+                        <div class="ratting mt-1">
+                          <p class="star">
+                            <i class="fa-solid fa-star icons"></i> (5.0)
+                          </p>
+                          <p>
+                            <img src="assets/img/country/BD_Flag.png" alt="" />
+                            Bangladesh
+                          </p>
+                        </div>
+                        <p class="mt-2">Highly skilled and talented.</p>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <p>Published 1 week ago</p>
+                    </div>
+                  </div>
+                  <div class="proposal">
+                    <div class="user">
+                      <div class="freelancer-img">
+                        <img src="assets/img/client_img.png" alt="" />
+                      </div>
+                      <div class="proposal-info">
+                        <p class="name">Name Here</p>
+                        <div class="ratting mt-1">
+                          <p class="star">
+                            <i class="fa-solid fa-star icons"></i> (5.0)
+                          </p>
+                          <p>
+                            <img src="assets/img/country/BD_Flag.png" alt="" />
+                            Bangladesh
+                          </p>
+                        </div>
+                        <p class="mt-2">Highly skilled and talented.</p>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <p>Published 1 week ago</p>
+                    </div>
+                  </div>
+                  <div class="proposal">
+                    <div class="user">
+                      <div class="freelancer-img">
+                        <img src="assets/img/client_img.png" alt="" />
+                      </div>
+                      <div class="proposal-info">
+                        <p class="name">Name Here</p>
+                        <div class="ratting mt-1">
+                          <p class="star">
+                            <i class="fa-solid fa-star icons"></i> (5.0)
+                          </p>
+                          <p>
+                            <img src="assets/img/country/BD_Flag.png" alt="" />
+                            Bangladesh
+                          </p>
+                        </div>
+                        <p class="mt-2">Highly skilled and talented.</p>
+                      </div>
+                    </div>
+                    <div class="day">
+                      <p>Published 1 week ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <!-- Notification Popup -->
+  <div class="modal fade" id="notification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">
+            Latest Notification
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark popup-icons"></i>
+          </button>
+        </div>
+        <div class="modal-body notifi">
+          <div class="notification">
+            <div class="item active">
+              <div class="sourch">
+                <img src="assets/img/notification_mail.png" alt="" />
+                <div class="text">
+                  <p>Notification Name</p>
+                  <span>Notification details</span>
+                </div>
+              </div>
+              <div class="date">
+                <p>1 day ago</p>
+              </div>
+            </div>
+            <div class="item active">
+              <div class="sourch">
+                <img src="assets/img/notification_mail.png" alt="" />
+                <div class="text">
+                  <p>Notification Name</p>
+                  <span>Notification details</span>
+                </div>
+              </div>
+              <div class="date">
+                <p>1 day ago</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sourch">
+                <img src="assets/img/notification_mail.png" alt="" />
+                <div class="text">
+                  <p>Notification Name</p>
+                  <span>Notification details</span>
+                </div>
+              </div>
+              <div class="date">
+                <p>1 day ago</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="sourch">
+                <img src="assets/img/notification_mail.png" alt="" />
+                <div class="text">
+                  <p>Notification Name</p>
+                  <span>Notification details</span>
+                </div>
+              </div>
+              <div class="date">
+                <p>1 day ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Support Popup -->
+  <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">
+            Get Into Touch <br /><span>
+              You can expect top-quality work within your budget</span>
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark popup-icons"></i>
+          </button>
+        </div>
+        <div class="modal-body proceed">
+          <div class="user-info" id="personal">
+            <div class="items">
+              <div class="item">
+                <div class="search__name" id="name">Name</div>
+                <input type="name" class="search__input" placeholder="your name" />
+              </div>
+              <div class="item">
+                <div class="search__name" id="gender">Email</div>
+                <input type="mail" class="search__input" placeholder="yourmail@gmail.com" />
+              </div>
+            </div>
+            <div class="items">
+              <div class="item">
+                <div class="search__name" id="Message">Subject</div>
+                <input type="text" class="search__input" placeholder="subject" />
+              </div>
+            </div>
+            <div class="items">
+              <div class="item">
+                <div class="search__name" id="Message">Message</div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <a href="index.html" class="btn btn__secondary" onclick="submit()">
+              Submit
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Support Popup -->
+  <div class="modal fade" id="edit__profile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">
+            Profile Information
+          </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark popup-icons"></i>
+          </button>
+        </div>
+        <div class="modal-body notifi">
+          <div class="upload-img">
+            <canvas id="canv1"></canvas>
+
+            <p>
+              <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()" />
+            </p>
+          </div>
+          <div class="user-info assistant mt-3" id="personal">
+            <div class="items">
+              <div class="item">
+                <div class="search__name" id="name">First Name</div>
+                <input type="name" class="search__input" placeholder="first name" />
+              </div>
+              <div class="item">
+                <div class="search__name" id="gender">Last Nmae</div>
+                <input type="name" class="search__input" placeholder="last nmae" />
+              </div>
+            </div>
+            <div class="items">
+              <div class="item">
+                <div class="search__name" id="name">WhatsApp Number</div>
+                <input type="name" class="search__input" placeholder="whatsApp number" />
+              </div>
+              <div class="item">
+                <div class="search__name" id="gender">Set Title</div>
+                <input type="name" class="search__input" placeholder="set title" />
+              </div>
+            </div>
+            <div class="items">
+              <div class="item">
+                <div class="search__name" id="weight">Country Name</div>
+                <input type="text" class="search__input" placeholder="country" />
+              </div>
+              <div class="item">
+                <div class="search__name" id="weight">City</div>
+                <input type="phone" class="search__input" placeholder="city" />
+              </div>
+            </div>
+            <div class="mt-4 mb-4">
+              <div class="items">
+                <div class="item">
+                  <h2 class="mb-3" style="font-size: 16px">Tell us about yourself and a little about your professional experience.</h2>
+                  <div class="checkbox_item">
+                    <input type="checkbox" class="checkbox">
+                    <p>Acceptance policy checkbox</p>
+                  </div>
+                  <div class="checkbox_item">
+                    <input type="checkbox" class="checkbox">
+                    <p>Acceptance policy checkbox</p>
+                  </div>
+                  <div class="checkbox_item">
+                    <input type="checkbox" class="checkbox">
+                    <p>Acceptance policy checkbox</p>
+                  </div>
+                  <div class="checkbox_item">
+                    <input type="checkbox" class="checkbox">
+                    <p>Acceptance policy checkbox</p>
+                  </div>
+                  <div class="checkbox_item">
+                    <input type="checkbox" class="checkbox">
+                    <p>Acceptance policy checkbox</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <h2 class="mb-3" style="font-size: 16px">Tell us about yourself and a little about your professional experience.</h2>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" spellcheck="false"></textarea>
+                </div>
+              </div>
+            </div>
+            <a href="index.html" class="btn btn__secondary" onclick="submit()">
+              Save
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/fontawesome.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/style.js"></script>
 </body>
 
 </html>
