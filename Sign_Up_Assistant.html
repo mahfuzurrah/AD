@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="sign_up">
+        <div class="left_content">
+            <img src="assets/img/Sign_Up_Page_Assistant.png" alt="">
+            <h2>Fill in the information below so that your request is sent to the professionals registered in our database.</h2>
+        </div>
+        <div class="right_content">
+            <div class="input_from">
+                <div class="upload-img">
+                    <canvas id="canv1"></canvas>
+
+                    <p>
+                        <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()">
+                    </p>
+                </div>
+                <div class="user-info assistant mt-3" id="personal">
+                    <div class="items">
+                        <div class="item">
+                            <div class="search__name" id="name">First Name</div>
+                            <input type="name" class="search__input" placeholder="first name">
+                        </div>
+                        <div class="item">
+                            <div class="search__name" id="gender">Last Nmae</div>
+                            <input type="name" class="search__input" placeholder="last nmae">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="search__name" id="name">WhatsApp Number</div>
+                            <input type="name" class="search__input" placeholder="whatsApp number">
+                        </div>
+                        <div class="item">
+                            <div class="search__name" id="gender">Set Title</div>
+                            <input type="name" class="search__input" placeholder="set title">
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="search__name" id="weight">Country Name</div>
+                            <input type="text" class="search__input" placeholder="country">
+                        </div>
+                        <div class="item">
+                            <div class="search__name" id="weight">City</div>
+                            <input type="phone" class="search__input" placeholder="city">
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-4">
+                        <div class="items">
+                            <div class="item">
+                                <h2 class="mb-3" style="font-size: 16px">Tell us about yourself and a little about your
+                                    professional experience.</h2>
+                                <div class="checkbox_item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p>Acceptance policy checkbox</p>
+                                </div>
+                                <div class="checkbox_item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p>Acceptance policy checkbox</p>
+                                </div>
+                                <div class="checkbox_item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p>Acceptance policy checkbox</p>
+                                </div>
+                                <div class="checkbox_item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p>Acceptance policy checkbox</p>
+                                </div>
+                                <div class="checkbox_item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p>Acceptance policy checkbox</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h2 class="mb-3" style="font-size: 16px">Tell us about yourself and a little about your
+                                    professional experience.</h2>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    spellcheck="false"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="index.html" class="btn btn__secondary">
+                        Submit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/style.js"></script>
+</body>
+
+</html>

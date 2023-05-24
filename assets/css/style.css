@@ -953,16 +953,20 @@ My Profile
   gap: 15px;
 }
 
+.user-info.assistant {
+  margin-top: 30px;
+}
+
 .user-info.assistant .items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: 20px
+  flex-wrap: 30px;
 }
 
-.user-info.assistant .items .item {
+/* .user-info.assistant .items .item {
   max-width: 360px;
-}
+} */
 
 .checkbox_item {
   display: flex;
@@ -1218,6 +1222,53 @@ input::placeholder {
   background-color: #fff;
 }
 
+
+
+
+
+/*=========================================== 
+Sign Up Pages
+===========================================*/
+
+.sign_up {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.left_content h2 {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  bottom: 18%;
+  font-size: 25px;
+  padding: 30px;
+}
+
+.right_content {
+  padding: 20px;
+  margin: auto;
+  max-width: 768px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=========================================== 
 Popup
 ===========================================*/
@@ -1287,7 +1338,7 @@ Popup
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 20px;
 }
 
@@ -1474,6 +1525,14 @@ table {
   .EXXX {
     position: fixed;
   }
+
+  .sign_up {
+    display: block !important;
+  }
+
+  .sign_up .left_content {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1541,18 +1600,24 @@ table {
     width: 100%;
   }
 
-  .time_container{
+  .time_container {
     width: 100%;
   }
 
-  .input-box{
+  .input-box {
     display: block;
   }
 
-  .input-box button{
+  .input-box button {
     margin-top: 20px;
     width: 100%;
   }
+
+  .user-info.assistant .items {
+    display: block;
+  }
+
+
 }
 
 @media screen and (max-width: 576px) {
