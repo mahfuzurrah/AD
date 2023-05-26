@@ -317,7 +317,8 @@
                 <p>Acceptance policy checkbox</p>
               </div>
             </div>
-            <a href="#" class="btn btn__secondary" data-bs-toggle="modal" data-bs-target="#thank_you">Sent a Proposal</a>
+            <a href="#" class="btn btn__secondary" data-bs-toggle="modal" data-bs-target="#thank_you">Sent a
+              Proposal</a>
           </div>
         </div>
       </div>
@@ -338,7 +339,8 @@
         </div>
         <div class="modal-body proceed">
           <div class="user-info" id="personal">
-            <h2 style="text-align: center; padding: 20px; background: #F3F7F3;">Thank You <br> Your proposal is in moderation</h2>
+            <h2 style="text-align: center; padding: 20px; background: #F3F7F3;">Thank You <br> Your proposal is in
+              moderation</h2>
           </div>
         </div>
       </div>
@@ -351,6 +353,25 @@
   <script src="assets/js/fontawesome.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/style.js"></script>
+
+  <script>
+    // Read more Or Less
+    document.getElementById("toggleButton").addEventListener("click", function () {
+      var content = document.querySelector(".text__content");
+      content.classList.toggle("showLess");
+
+      var buttonText = this.innerHTML === "Read More" ? "Read Less" : "Read More";
+      this.innerHTML = buttonText;
+    });
+
+    document.getElementById("toggleButton2").addEventListener("click", function () {
+      var content = document.querySelector(".text__content2");
+      content.classList.toggle("showLess");
+
+      var buttonText = this.innerHTML === "Read More" ? "Read Less" : "Read More";
+      this.innerHTML = buttonText;
+    });
+  </script>
 </body>
 
 </html>

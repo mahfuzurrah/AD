@@ -1307,9 +1307,9 @@ Sign Up Pages
   max-width: 768px;
 }
 
-.right_content .upload-img canvas{
-width: 80px;
-height: 80px;
+.upload-img canvas{
+width: 80px !important;
+height: 80px !important;
 }
 
 
@@ -1511,12 +1511,11 @@ Popup
   flex-wrap: wrap;
 }
 
-
-.released {
+.sent {
   background: #BED24A;
 }
 
-.sent {
+.released  {
   background: #9EDCD0;
 }
 
@@ -1539,6 +1538,22 @@ table {
   width: 100%;
 }
 
+.text__content2 {
+    max-height: 52px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.text__content2.showLess {
+    max-height: 100%;
+}
+
+
+#toggleButton, #toggleButton2 {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 15px;
+}
 
 /* Responcive Part */
 
