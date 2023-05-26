@@ -121,30 +121,36 @@
               <div class="card_group">
                 <!-- card -->
                 <!-- <a href=""> -->
-                  <div class="card mt-3">
-                    <div class="project_info">
-                      <div class="project_name">
-                        <div class="status">
-                          <h2>Project Name Here</h2>
-                          <p style="font-size: 14px; margin-top: 5px">
-                            Posted 4 minutes ago
-                          </p>
-                        </div>
+                <div class="card mt-3">
+                  <div class="project_info">
+                    <div class="project_name">
+                      <div class="status">
+                        <h2>Project Name Here</h2>
+                        <p style="font-size: 13px; margin-top: 5px">
+                          By Client Name
+                        </p>
+                        <p style="font-size: 13px; margin-top: 5px">
+                          Posted 4 minutes ago
+                        </p>
+                      </div>
+                      <div class="work_right_item">
                         <p class="sent_active active">
                           You already sent a proposal to this project
                         </p>
+                        <a href="project.html" class="btn" >See Project</a>
                       </div>
-                      <p class="description_part mt-3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nemo aperiam perspiciatis aliquid expedita cupiditate!
-                        Sint est fugit atque optio alias, laboriosam quod quo
-                        nam doloremque sequi natus vel enim ipsa temporibus
-                        vitae aspernatur odio a incidunt! Nobis quos
-                        consequuntur perspiciatis placeat! Similique, fugit
-                        totam. Tempora cum est rerum a illo.
-                      </p>
                     </div>
+                    <p class="description_part mt-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nemo aperiam perspiciatis aliquid expedita cupiditate!
+                      Sint est fugit atque optio alias, laboriosam quod quo
+                      nam doloremque sequi natus vel enim ipsa temporibus
+                      vitae aspernatur odio a incidunt! Nobis quos
+                      consequuntur perspiciatis placeat! Similique, fugit
+                      totam. Tempora cum est rerum a illo.
+                    </p>
                   </div>
+                </div>
                 <!-- </a> -->
                 <!-- card -->
                 <a href="project.html">
@@ -153,13 +159,19 @@
                       <div class="project_name">
                         <div class="status">
                           <h2>Project Name Here</h2>
-                          <p style="font-size: 14px; margin-top: 5px">
+                          <p style="font-size: 13px; margin-top: 5px">
+                            By Client Name
+                          </p>
+                          <p style="font-size: 13px; margin-top: 5px">
                             Posted 4 minutes ago
                           </p>
                         </div>
-                        <p class="sent_active">
-                          You already sent a proposal to this project
-                        </p>
+                        <div class="work_right_item">
+                          <p class="sent_active">
+                            You already sent a proposal to this project
+                          </p>
+                          <a href="project.html" class="btn active">See Project</a>
+                        </div>
                       </div>
                       <p class="description_part mt-3">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -174,7 +186,7 @@
                   </div>
                 </a>
                 <div class="text-center">
-                  <a href="find_work.html" class="btn mt-5">See more</a>
+                  <a href="find_work.html" class="btn see_more mt-5">See more</a>
                 </div>
               </div>
 
@@ -263,27 +275,31 @@
                   <a class="btn_s" href="my_proposal.html">View all <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="proposals-list">
-                  <div class="proposal-container">
-                    <a href="my_proposal.html">
-                      <div class="proposal">
-                        <div class="user">
-                          <i class="fa-solid fa-bag-shopping icons"></i>
-                          <div class="proposal-info">
-                            <p class="name">Project Name Here</p>
-                            <p class="day">
-                              1 day ago<i class="fa-solid fa-star icons"></i>
+                    <div class="no_proposal no_proposal active">
+                      <img src="assets/img/No proposal.svg" alt="">
+                      <h2>No more proposal find your work</h2>
+                    </div>
+                    <div class="proposal-container proposal_group">
+                      <a href="my_proposal.html">
+                        <div class="proposal">
+                          <div class="user">
+                            <img src="assets/img/bag.svg" alt="">
+                            <div class="proposal-info">
+                              <p class="name">Project Name Here</p>
+                              <p class="day">
+                                1 day ago<i class="fa-solid fa-star icons"></i>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="status">
+                            <p>
+                              Proposal Status:<br />
+                              <span style="font-weight: 600">Activated</span>
                             </p>
                           </div>
                         </div>
-                        <div class="status">
-                          <p>
-                            Proposal Status:<br />
-                            <span style="font-weight: 600">Activated</span>
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+                      </a>
+                    </div>
                 </div>
               </div>
               <div class="my_proposal mt-4">
@@ -292,7 +308,11 @@
                   <a class="btn_s" href="video_class.html">View all <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="proposals-list">
-                  <div class="proposal-container">
+                  <div class="no_proposal no_video active">
+                    <img src="assets/img/No video.svg" alt="">
+                    <h2>Coming Soon</h2>
+                  </div>
+                  <div class="proposal-container video_group">
                     <a href="#">
                       <div class="proposal">
                         <div class="user">
