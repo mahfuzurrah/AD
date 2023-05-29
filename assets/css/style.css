@@ -1412,7 +1412,7 @@ Popup
 }
 
 .items input {
-  padding: 12px 15px;
+  padding: 10px 15px;
   border-radius: 80px;
   background: var(--bg-color);
   border: 1px solid var(--border-color);
@@ -1518,6 +1518,15 @@ Popup
 
 .released {
   background: #9EDCD0;
+  text-align: justify;
+}
+
+.help-text {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--primary-color);
 }
 
 .moderation {
@@ -1527,6 +1536,23 @@ Popup
 .denied {
   background: #F099C1;
 }
+
+/* td.sent {
+  color: #BED24A;
+}
+
+td.released {
+  color: #02ffcc;
+  text-align: justify;
+}
+
+td.moderation {
+  color: #ABD7F9;
+}
+
+td.denied {
+  color: #F099C1;
+} */
 
 td a:hover {
   color: var(--primary-color);
