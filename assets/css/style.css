@@ -1306,6 +1306,7 @@ Sign Up Pages
   padding: 20px;
   margin: auto;
   max-width: 768px;
+  width: 100%;
 }
 
 .upload-img canvas {
@@ -1521,9 +1522,13 @@ Popup
   text-align: justify;
 }
 
-.help-text {
+.released_help_text{
   text-align: center;
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.help-text {
   margin-top: 10px;
   font-size: 12px;
   color: var(--primary-color);
