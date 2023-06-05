@@ -1312,7 +1312,7 @@ Sign Up Pages
 }
 
 .right_content {
-  padding: 20px 50px;
+  padding: 20px 80px;
   margin: auto;
   max-width: 50vw;
   width: 100%;
@@ -1604,6 +1604,10 @@ table {
   font-size: 15px;
 }
 
+.wp{
+  max-width: 49%;
+}
+
 /* Responcive Part */
 
 @media screen and (max-width: 1350px) {
@@ -1742,7 +1746,9 @@ table {
     display: block;
   }
 
-
+  .wp{
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
