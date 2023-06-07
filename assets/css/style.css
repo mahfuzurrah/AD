@@ -1026,7 +1026,7 @@ My Profile
 }
 
 .checkbox_item p {
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
 }
 
 /*=========================================== 
@@ -1301,14 +1301,27 @@ Sign Up Pages
   height: 100vh;
 }
 
+.left_content{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding: 30px;
+}
+
+.left_content img{
+  position: relative;
+  top: 12%;
+}
+
 .left_content h2 {
-  max-width: 800px;
+  width: 800px;
   text-align: center;
   margin: auto;
-  position: relative;
+  position: absolute;
   bottom: 18%;
-  font-size: 25px;
-  padding: 30px;
 }
 
 .right_content {
@@ -1650,14 +1663,6 @@ table {
   .EXXX {
     position: fixed;
   }
-
-  .sign_up {
-    display: block !important;
-  }
-
-  .sign_up .left_content {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -1673,8 +1678,30 @@ table {
     max-width: 100%;
   }
 
+  .left_content,
   .right_content{
     max-width: 100vw !important;
+    width: 100vw !important;
+  }
+
+  .right_content{
+    margin-top: 80px;
+    padding: 50px 30px;
+  }
+
+  .sign_up{
+    display: block;
+  }
+
+  .left_content h2{
+    bottom: -10%;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .left_content img{
+    margin-top: 50px;
   }
 }
 
@@ -1748,6 +1775,10 @@ table {
 
   .wp{
     max-width: 100%;
+  }
+
+  .left_content h2{
+    bottom: -25%;
   }
 }
 
