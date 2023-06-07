@@ -1329,11 +1329,13 @@ Sign Up Pages
 }
 
 .left_content h2 {
-  width: 800px;
+  max-width: 800px;
   text-align: center;
   margin: auto;
   position: absolute;
   bottom: 18%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .right_content {
