@@ -105,9 +105,10 @@ img {
   height: auto;
 }
 
-#shadow-host-content{
+#shadow-host-content {
   display: none;
 }
+
 /* Common Css*/
 
 .btn {
@@ -401,7 +402,7 @@ section {
 }
 
 .proposals-list,
-.proposal-container{
+.proposal-container {
   overflow-y: auto;
   height: 420px;
 }
@@ -1313,7 +1314,7 @@ Sign Up Pages
   height: 100vh;
 }
 
-.left_content{
+.left_content {
   width: 50vw;
   display: flex;
   flex-direction: column;
@@ -1323,7 +1324,7 @@ Sign Up Pages
   padding: 30px;
 }
 
-.left_content img{
+.left_content img {
   position: relative;
   top: 12%;
 }
@@ -1364,8 +1365,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 800px;
-  background: #000;
+  height: 500px;
 }
 
 .video-container video {
@@ -1379,7 +1379,7 @@ body {
   }
 }
 
-.video-title{
+.video-title {
   margin-top: 30px;
 }
 
@@ -1451,6 +1451,30 @@ body {
   border: 1px solid var(--border-color);
 }
 
+
+.comments .box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 0;
+}
+
+.comments .box img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.comments .box .name {
+  font-weight: 600;
+}
+
+.comments .box .name span{
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 10px;
+}
 
 /* ================================== */
 /* ================================== */
@@ -1663,7 +1687,7 @@ Popup
   text-align: justify;
 }
 
-.released_help_text{
+.released_help_text {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1724,7 +1748,7 @@ table {
   transition: max-height 0.3s ease;
 }
 
-.text__content2.v_text{
+.text__content2.v_text {
   max-height: 20px;
 }
 
@@ -1740,7 +1764,7 @@ table {
   font-size: 15px;
 }
 
-.wp{
+.wp {
   max-width: 49%;
 }
 
@@ -1802,29 +1826,33 @@ table {
   }
 
   .left_content,
-  .right_content{
+  .right_content {
     max-width: 100vw !important;
     width: 100vw !important;
   }
 
-  .right_content{
+  .right_content {
     margin-top: 80px;
     padding: 50px 30px;
   }
 
-  .sign_up{
+  .sign_up {
     display: block;
   }
 
-  .left_content h2{
+  .left_content h2 {
     bottom: -10%;
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  .left_content img{
+  .left_content img {
     margin-top: 50px;
+  }
+
+  .video-container {
+    height: auto;
   }
 }
 
@@ -1896,11 +1924,11 @@ table {
     display: block;
   }
 
-  .wp{
+  .wp {
     max-width: 100%;
   }
 
-  .left_content h2{
+  .left_content h2 {
     bottom: -25%;
   }
 }
