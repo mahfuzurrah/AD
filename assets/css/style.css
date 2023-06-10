@@ -1768,6 +1768,13 @@ table {
   max-width: 49%;
 }
 
+
+.vid_scroll{
+  height: 85vh;
+  overflow-y: auto;
+  padding-bottom: 120px;
+}
+
 /* Responcive Part */
 
 @media screen and (max-width: 1350px) {
@@ -1897,6 +1904,8 @@ table {
 
   .search-box {
     margin-top: 20px;
+    max-width: 100%;
+    width: 100vw;
   }
 
   .job_box {
