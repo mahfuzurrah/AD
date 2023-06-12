@@ -1778,48 +1778,16 @@ table {
 /* Responcive Part */
 
 @media screen and (max-width: 1350px) {
-  .body-content {
-    margin-left: 0 !important;
-  }
+  
+  
+}
 
-  .side_navbar {
-    display: none;
-  }
-
-  .navbar-toggler {
-    display: block !important;
-  }
-
-  .top_navabr .navbar .nav-2 {
-    display: block !important;
-    background: var(--white-color);
-    margin-top: 30px;
-    height: 100vh;
-    padding: 30px 30px;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-
-  navbar-collapse.collapse.show .top_navabr .navbar .nav-2 {
-    display: block;
-  }
-
-  .top_navabr .navbar .nav-2 li {
-    margin-top: 20px;
-  }
-
-  .top_navabr .navbar .nav-2 li .icons {
-    margin-right: 10px;
-  }
+@media screen and (max-width: 991px) {
 
   .EXXX {
     position: fixed;
   }
-}
-
-@media screen and (max-width: 991px) {
+  
   .my_proposal.user {
     margin-top: 20px;
   }
@@ -1861,6 +1829,46 @@ table {
   .video-container {
     height: auto;
   }
+  /* ================================== */
+  /* ================================== */
+
+  .body-content {
+    margin-left: 0 !important;
+  }
+
+  .side_navbar {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block !important;
+  }
+
+  .top_navabr .navbar .nav-2 {
+    display: block !important;
+    background: var(--white-color);
+    margin-top: 30px;
+    height: 100vh;
+    padding: 30px 30px;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  navbar-collapse.collapse.show .top_navabr .navbar .nav-2 {
+    display: block;
+  }
+
+  .top_navabr .navbar .nav-2 li {
+    margin-top: 20px;
+  }
+
+  .top_navabr .navbar .nav-2 li .icons {
+    margin-right: 10px;
+  }
+  /* ================================== */
+  /* ================================== */
 }
 
 @media screen and (max-width: 800px) {
