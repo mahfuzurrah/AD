@@ -1777,8 +1777,18 @@ table {
 
 /* Responcive Part */
 
-@media screen and (max-width: 1350px) {
-  
+@media screen and (max-width: 1440px) {
+  .side_navbar{
+    padding: 20px 0;
+  }
+
+  .side_navbar .nav{
+    margin-top: 40px;
+  }
+
+  .side_navbar .nav ul li{
+    margin-top: 0;
+  }
   
 }
 
@@ -1787,7 +1797,7 @@ table {
   .EXXX {
     position: fixed;
   }
-  
+
   .my_proposal.user {
     margin-top: 20px;
   }
